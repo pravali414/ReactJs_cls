@@ -10,9 +10,7 @@ function App() {
 
       <h1>app.js</h1>
       <ButtonComponent/>
-
-      
-      <Listcomponent/>
+ <Listcomponent/>
 
 
       <Orderlist/>
