@@ -6,6 +6,9 @@ import ListItems from "./components/list/listitems/listitems";
 import Headingcomponent,{Headingcomponent3,Headingcomponent2} from "./components/heading/heading";
 import { Greeting } from "./components/greeting/greeting";
 import ButtonComponent from "./components/classbased/button-component";
+import Inlinestyle from "./components/styling/inline-style";
+import Externalstyles from "./components/styling/external-style";
+import Modulestyles from "./components/styling/module-styles";
 
 function App() {
   return (
@@ -13,13 +16,14 @@ function App() {
 
 
       <h1>app.js</h1>
+      <Modulestyles/>
+     
+ 
+ 
+
+
+
       
- 
- 
-
-
-
-      <ButtonComponent/>
 
       
 
