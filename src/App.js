@@ -1,4 +1,6 @@
 import{components} from "react"
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 import Listcomponent from "./components/list/list";
 import Orderlist from "./components/list/ordered-list";
@@ -9,14 +11,21 @@ import ButtonComponent from "./components/classbased/button-component";
 import Inlinestyle from "./components/styling/inline-style";
 import Externalstyles from "./components/styling/external-style";
 import Modulestyles from "./components/styling/module-styles";
+import Bootstraplayout from "./components/bootstrap/firstcomponent";
+import Profilecard from "./components/bootstrap/card";
+import BootstrapLayout from "./components/bootstrap/firstcomponent";
+import Mapmethod from "./components/bootstrap/mapmethod";
 
 function App() {
   return (
     <div>
 
 
-      <h1>app.js</h1>
-      <Modulestyles/>
+     
+     <BootstrapLayout/>
+     <Mapmethod/>
+      
+      
      
  
  
@@ -27,7 +36,7 @@ function App() {
 
       
 
-      <h3>End of ButtonComponent</h3>
+     
       
      
       
