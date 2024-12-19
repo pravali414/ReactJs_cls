@@ -15,15 +15,17 @@ import Bootstraplayout from "./components/bootstrap/firstcomponent";
 import Profilecard from "./components/bootstrap/card";
 import BootstrapLayout from "./components/bootstrap/firstcomponent";
 import Mapmethod from "./components/bootstrap/mapmethod";
+import Parentcomponent from "./components/props/parent";
 
 function App() {
   return (
     <div>
+      <Parentcomponent/>
 
 
      
-     <BootstrapLayout/>
-     <Mapmethod/>
+     {/*<BootstrapLayout/>
+     <Mapmethod/>*/}
       
       
      
