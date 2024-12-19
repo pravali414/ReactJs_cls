@@ -7,11 +7,13 @@ const Mapmethod=()=>{
             {
                 name:"pravallika",
                 color:"red",
+                id:1,
                 designation:"java developer",
                 salary:"1Lpa"
             },{
                 name:"mallika",
                 color:"yellow",
+                id:2,
                 designation:"Doctor",
                 salary:"80k"
     
@@ -19,6 +21,7 @@ const Mapmethod=()=>{
             {
                 name:"divya",
                 color:"green",
+                id:3,
                 designation:"Teacher",
                 salary:"50k"
     
@@ -30,7 +33,7 @@ const Mapmethod=()=>{
         ]
         return(
             <>
-            {members.map((details)=><Profilecard profilecard profile={details}/>)}
+            {members.map((details)=><Profilecard profilecard profile={details} key={details.id}/>)}
             </>
         
 
