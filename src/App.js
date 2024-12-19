@@ -16,11 +16,15 @@ import Profilecard from "./components/bootstrap/card";
 import BootstrapLayout from "./components/bootstrap/firstcomponent";
 import Mapmethod from "./components/bootstrap/mapmethod";
 import Parentcomponent from "./components/props/parent";
+import Counter from "./components/counter/counter";
+import ChildButton from "./components/counter/childButton";
 
 function App() {
   return (
     <div>
       <Parentcomponent/>
+      <Counter/>
+      
 
 
      
