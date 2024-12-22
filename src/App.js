@@ -18,19 +18,19 @@ import Mapmethod from "./components/bootstrap/mapmethod";
 import Parentcomponent from "./components/props/parent";
 import Counter from "./components/counter/counter";
 import ChildButton from "./components/counter/childButton";
+import Mouting from "./components/lifecycle/mounting/mounting";
+import Loader from "./components/loaders/loaders";
 
 function App() {
+  const greencolor="Green"
   return (
     <div>
-      <Parentcomponent/>
-      <Counter/>
+      <Mouting color={greencolor}/>
       
-
+<Loader/>
 
      
-     {/*<BootstrapLayout/>
-     <Mapmethod/>*/}
-      
+
       
      
  
