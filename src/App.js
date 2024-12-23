@@ -1,54 +1,26 @@
-import{components} from "react"
-import "bootstrap/dist/css/bootstrap.min.css";
-
-
-import Listcomponent from "./components/list/list";
-import Orderlist from "./components/list/ordered-list";
-import ListItems from "./components/list/listitems/listitems";
-import Headingcomponent,{Headingcomponent3,Headingcomponent2} from "./components/heading/heading";
-import { Greeting } from "./components/greeting/greeting";
-import ButtonComponent from "./components/classbased/button-component";
-import Inlinestyle from "./components/styling/inline-style";
-import Externalstyles from "./components/styling/external-style";
-import Modulestyles from "./components/styling/module-styles";
-import Bootstraplayout from "./components/bootstrap/firstcomponent";
-import Profilecard from "./components/bootstrap/card";
-import BootstrapLayout from "./components/bootstrap/firstcomponent";
-import Mapmethod from "./components/bootstrap/mapmethod";
 import Parentcomponent from "./components/props/parent";
 import Counter from "./components/counter/counter";
 import ChildButton from "./components/counter/childButton";
 import Mouting from "./components/lifecycle/mounting/mounting";
 import Loader from "./components/loaders/loaders";
+import UseStateExample2 from "./components/hooks/useState/useStateEx2";
 
 function App() {
   const greencolor="Green"
   return (
     <div>
+      <Parentcomponent/>
+      <Counter/>
       <Mouting color={greencolor}/>
-      
+
 <Loader/>
+<UseStateExample2/>
 
-     
 
+     {/*<BootstrapLayout/>
+     <Mapmethod/>*/}
       
-     
- 
- 
-
-
-
-      
-
-      
-
-     
-      
-     
-      
-   
-     
-    </div>
+</div>
   );
 }
 
