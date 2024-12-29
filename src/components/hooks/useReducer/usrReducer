@@ -1,0 +1,40 @@
+
+import React, { useReducer } from "react";
+
+// Define the initial state
+const initialState = {
+  age: 20,
+  name: "hello",
+};
+
+// Define the reducer function
+const reducerFunction = (state, action) => {
+  switch (action.type) {
+    case "UPDATE_NAME":
+      return { ...state, name: action.payload };
+    case "INCREMENT_AGE":
+      return { ...state, age: state.age + 1 };
+    default:
+      return state;
+  }
+};
+
+const UseReducerExample = () => {
+  const [currentState, dispatchFunction] = useReducer(reducerFunction, initialState);
+
+  return (
+    <>
+      <h2>I am useReducer Example</h2>
+      <h2>Name: {currentState.name}</h2>
+      <h2>Age: {currentState.age}</h2>
+      <button onClick={() => dispatchFunction({ type: "UPDATE_NAME", payload: "John" })}>
+        Update Name
+      </button>
+      <button onClick={() => dispatchFunction({ type: "INCREMENT_AGE" })}>
+        Increment Age
+      </button>
+    </>
+  );
+};
+
+export default UseReducerExample;
